@@ -72,6 +72,7 @@ namespace EmployeeProgram
             {
                 Console.WriteLine("{1}       {0}", arr[i].getName(), arr[i].getIdNumber());
             }
+
             Console.WriteLine("");
         }
         
