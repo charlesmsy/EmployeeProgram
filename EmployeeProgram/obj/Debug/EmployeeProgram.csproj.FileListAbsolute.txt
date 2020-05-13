@@ -1,0 +1,6 @@
+/Users/mac/Projects/EmployeeProgram/EmployeeProgram/bin/Debug/EmployeeProgram.exe
+/Users/mac/Projects/EmployeeProgram/EmployeeProgram/bin/Debug/EmployeeProgram.pdb
+/Users/mac/Projects/EmployeeProgram/EmployeeProgram/obj/Debug/EmployeeProgram.csprojAssemblyReference.cache
+/Users/mac/Projects/EmployeeProgram/EmployeeProgram/obj/Debug/EmployeeProgram.csproj.CoreCompileInputs.cache
+/Users/mac/Projects/EmployeeProgram/EmployeeProgram/obj/Debug/EmployeeProgram.exe
+/Users/mac/Projects/EmployeeProgram/EmployeeProgram/obj/Debug/EmployeeProgram.pdb
