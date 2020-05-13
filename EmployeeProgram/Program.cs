@@ -13,16 +13,15 @@ namespace EmployeeProgram
             // Data //
             UIFunction uif = new UIFunction();
             ProgramData data = new ProgramData();
-            Employee[] itemArray = data.getList();
             
             // UI //
             String userResponse = "";
-            Console.WriteLine("Insert Command");
+            Console.WriteLine("Type COMMANDS to get a list of commands.");
 
             while (userResponse != "END")
             {
 
-                Console.Write("//ROOT/");
+                Console.Write("//");
                 userResponse = Console.ReadLine();
 
                 switch (userResponse)
@@ -41,25 +40,25 @@ namespace EmployeeProgram
                     case "list":
                     case "List":
                     case "LIST":
-                        uif.list(itemArray);
+                        uif.list(data.getList());
                         break;
 
                     case "order":
                     case "Order":
                     case "ORDER":
-                        MaxHeapSort ob = new MaxHeapSort(itemArray);
+                        MaxHeapSort ob = new MaxHeapSort(data.getList());
                         break;
 
                     case "reverse_order":
                     case "Reverse_Order":
                     case "REVERSE_ORDER":
-                        MinHeapSort obj = new MinHeapSort(itemArray);
+                        MinHeapSort obj = new MinHeapSort(data.getList());
                         break;
 
                     case "reset":
                     case "Reset":
                     case "RESET":
-                        uif.reset(itemArray);
+                        uif.reset(data);
                         break;
 
                     case "END":

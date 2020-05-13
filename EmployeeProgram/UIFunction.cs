@@ -32,18 +32,19 @@ namespace EmployeeProgram
             Console.WriteLine("");
         }
 
-        public void reset(Employee[] _itemArray)
+        public void reset(ProgramData _data)
         {
             Employee[] tempArray = {
-                        new Employee("Office_Lady", 1001),
+                        new Employee("Office_Lady", 1015),
                         new Employee("Desk_Gentleman", 1050),
                         new Employee("NEW_Girl", 1020),
-                        new Employee("Boss_Man", 1015),
+                        new Employee("Boss_Man", 1001),
                         new Employee("Boss_Woman", 1070),
                         new Employee("Office_Clown", 1060),
                         new Employee("Cat_Man", 1040)
                         };
-            _itemArray = tempArray;
+
+            _data.setList(tempArray);
             Console.WriteLine("Employee list RESET complete.");
             Console.WriteLine("");
         }
