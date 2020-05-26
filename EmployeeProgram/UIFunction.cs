@@ -10,13 +10,13 @@ namespace EmployeeProgram
             Console.WriteLine("COMMANDS");
             Console.WriteLine("     List commands availible.");
             Console.WriteLine("LIST");
-            Console.WriteLine("     List inventory.");
+            Console.WriteLine("     List employee.");
             Console.WriteLine("ORDER");
-            Console.WriteLine("     ORDER inventory list using HeapSort.");
+            Console.WriteLine("     ORDER employee list using HeapSort.");
             Console.WriteLine("REVERSE_ORDER");
-            Console.WriteLine("     Reverse order inventory list.");
+            Console.WriteLine("     Reverse order employee list.");
             Console.WriteLine("RESET");
-            Console.WriteLine("     Reset the inventory items.");
+            Console.WriteLine("     Reset the employee.");
             Console.WriteLine("END");
             Console.WriteLine("     End program. MUST BE IN ALL CAPS!!");
         }

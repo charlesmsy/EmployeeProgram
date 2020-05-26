@@ -66,7 +66,7 @@ namespace EmployeeProgram
         static void printArray(Employee[] arr)
         {
             int n = arr.Length;
-            Console.WriteLine("Listing inventory in Descending Order");
+            Console.WriteLine("Listing employee in Descending Order");
             Console.WriteLine("");
             Console.WriteLine("ID         NAME");
             for (int i = 0; i < n; i++)
