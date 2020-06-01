@@ -11,57 +11,57 @@ namespace EmployeeProgram
         public static void Main(string[] args)
         {
             // Data //
-            UIFunction uif = new UIFunction();
             ProgramData data = new ProgramData();
             
             // UI //
             String userResponse = "";
             Console.WriteLine("Type COMMANDS to get a list of commands.");
 
-            while (userResponse != "END")
+            while (userResponse != "end")
             {
 
                 Console.Write("//");
-                userResponse = Console.ReadLine();
+                userResponse = Console.ReadLine().ToLower();
 
                 switch (userResponse)
                 {
 
                     case "?":
                     case "help":
-                    case "Help":
-                    case "HELP":
                     case "commands":
-                    case "Commands":
-                    case "COMMANDS":
-                        uif.help();
+                        Console.WriteLine("List of Commands:");
+                        Console.WriteLine("");
+                        Console.WriteLine("COMMANDS");
+                        Console.WriteLine("     List commands availible.");
+                        Console.WriteLine("LIST");
+                        Console.WriteLine("     List employee.");
+                        Console.WriteLine("ORDER");
+                        Console.WriteLine("     ORDER employee list using HeapSort.");
+                        Console.WriteLine("REVERSE_ORDER");
+                        Console.WriteLine("     Reverse order employee list.");
+                        Console.WriteLine("RESET");
+                        Console.WriteLine("     Reset the employee.");
+                        Console.WriteLine("END");
+                        Console.WriteLine("     End program.");
                         break;
 
                     case "list":
-                    case "List":
-                    case "LIST":
-                        uif.list(data.getList());
+                        data.printArray();
                         break;
 
                     case "order":
-                    case "Order":
-                    case "ORDER":
-                        MaxHeapSort ob = new MaxHeapSort(data.getList());
+                        data.maxSort();
                         break;
 
                     case "reverse_order":
-                    case "Reverse_Order":
-                    case "REVERSE_ORDER":
-                        MinHeapSort obj = new MinHeapSort(data.getList());
+                        data.minSort();
                         break;
 
                     case "reset":
-                    case "Reset":
-                    case "RESET":
-                        uif.reset(data);
+                        data.reset();
                         break;
 
-                    case "END":
+                    case "end":
                         break;
 
                     default:
