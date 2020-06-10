@@ -34,5 +34,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Employee.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
